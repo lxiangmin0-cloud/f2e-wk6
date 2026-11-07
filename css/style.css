@@ -1,0 +1,139 @@
+:root {
+  --primary: #778A50;
+  --background: #EDF2C5;
+  --content-text: #7D7D7D;
+  --content-bg: #F7FBDA;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--background);
+  color: var(--content-text);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+a { text-decoration: none; }
+ul { list-style: none; }
+img { display: block; }
+
+/* 內容寬度 1120px 置中 */
+.page {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  margin-bottom: 8px;
+}
+.logo {
+  font-size: 44px;      /* Head1 */
+  font-weight: 900;
+  line-height: 60px;
+  color: var(--primary);
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--primary);
+}
+.btn {
+  display: block;
+  padding: 4px 8px;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  font-size: 14px;       /* Text1 */
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary);
+}
+
+/* nav */
+.nav {
+  height: 44px;
+  background: var(--primary);
+  border-radius: 4px;
+  padding: 0 32px;
+}
+.nav ul {
+  display: flex;
+  gap: 64px;
+  height: 100%;
+  align-items: center;
+}
+.nav a {
+  font-size: 16px;       /* Head2 */
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--content-bg);
+}
+
+/* main */
+.main { padding-bottom: 116px; }
+.banner {
+  width: 1120px;
+  height: 448px;
+  object-fit: cover;
+  margin-top: 16px;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.col { width: 528px; }
+.bar {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 32px;
+  background: var(--primary);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--content-bg);
+  margin-bottom: 16px;
+}
+.thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+.thumbs img {
+  width: 165px;
+  height: 140px;
+  object-fit: cover;
+}
+.contact-box {
+  background: var(--content-bg);
+  padding: 16px;
+  min-height: 140px;
+}
+.contact-box hr {
+  border: 0;
+  border-top: 1px solid var(--content-text);
+  margin: 8px 0;
+}
+
+/* footer */
+.footer {
+  height: 64px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  font-size: 12px;      /* Text2 */
+  color: var(--background);
+}
